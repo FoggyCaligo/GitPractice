@@ -1,0 +1,34 @@
+<dev에서 feature/branch 나누기>
+1. git checkout dev
+2. git branch feature/기능명
+
+<feature브랜치에서 작업>
+1. git pull origin/dev
+2. git add .
+3. git commit -m "[메디25] feat : "
+
+<dev 적용>
+1. git checkout dev
+2. git merge --squash feature/me1
+3. git commit -m "caligo_|medi|plan|care|_|addooo|change|remove|_기능명
+4. git push
+
+<release 적용>
+1. git checkout release
+2. git merge --squash feature/기능 브랜치
+3. git commit -m "caligo_medi|plan|care_addooo|change|branch|remove_기능명"
+
+<master 적용>
+1. git merge release
+
+
+
+
+
+[메디25] fix : |깃작업 | feature/~~~ : ~~~~~수정  |dev2release 
+[메디25]feat : 
+[메디25]style:
+[메디25]docs : 
+[메디25]refactor : 
+[메디25]test :
+
